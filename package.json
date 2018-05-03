@@ -1,0 +1,11 @@
+{
+  "name": "multicolumn-dashboard",
+  "version": "1.0.0",
+  "description": "Grid with multiple columns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Moraret",
+  "license": "ISC"
+}
