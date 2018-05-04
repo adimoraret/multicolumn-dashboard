@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="row text-center">
+        <div class="col-2"><h5>Player</h5></div>
+        <div class="col-1" v-for="round in [1,2,3,4,5,6,7,8,9,10]">
+          <h5>Wave {{round}}</h5>
+        </div>
+      </div>
+      <div class="line row text-center" v-for="player in players">
+          <div class="col-2 rcell">
+            <i class="fas fa-user-alt fa-4x" v-bind:class="player.tshirt"></i>
+            <h4>{{player.name}}</h4>
+          </div>
+          <div class="col-1" v-for="score in player.scores">
+            <div class="rcell">
+              <div class="h12_5"></div>
+              <div class="h25 r1">{{score[0].toFixed(1)}}</div>
+              <div class="h25 r2">{{score[1].toFixed(1)}}</div>
+              <div class="h25 r3">{{score[2].toFixed(1)}}</div>            
+              <div class="h12_5"></div>
+              <span class="indicator badge badge-dark">4.6</span>
+            </div>
+          </div>
+          <div class="col-1 offset-md-1 rcell">
+              <i class="fa-3x">{{player.seatNumber}}</i>
+              <span class="indicator badge badge-primary">8.9</span> 
+          </div>
+      </div>
+    </div>
+    <script src="/dist/dashboard.js"></script>    
+  </body>
+</html>

@@ -1,0 +1,36 @@
+$cellBackground: #cce5ff;
+$lineHeight: 100px;
+
+.line { 
+  margin: 20px 20px 20px 20px;
+  height: $lineHeight; 
+}
+
+.h25 { height: 25%; }
+.h12_5 { height: 12.5%; }
+
+.rcell { 
+  background: $cellBackground;
+  box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+  color: #444;
+  height: 100%;
+}
+
+.r0 { background-color: $cellBackground }
+.r1 { background-color: #d4edda; font-size:110%; font-weight: 700; }
+.r2 { background-color: #fff3cd; font-size:110%; font-weight: 700; }
+.r3 { background-color: #f8d7da; font-size:110%; font-weight: 700; }
+
+.indicator {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 90%;
+}
+
+.Blue { color: #007bff; }
+.Red { color: #dc3545; }
+.Green { color: #28a745; }
+.Yellow { color: #ffff00; }
+.White { color: #ffffff; }
+.Orange { color: #ffa500; }
