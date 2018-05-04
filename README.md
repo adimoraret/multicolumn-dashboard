@@ -1,5 +1,7 @@
-# MultiColumn BootStrap Dashboard
+# MultiColumn Bootstrap Dashboard
 Example of a bootstrap dashboard example with 14 columns
+
+![Screenshot](assets/screenshot.png)
 
 ## Customize Bootstrap
 Download [Bootstrap sources](https://getbootstrap.com/docs/4.0/getting-started/download/)
